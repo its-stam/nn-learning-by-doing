@@ -11,7 +11,8 @@ All programs run in the browser simulation of the [Open Roberta Lab](https://lab
 3. [Own example: line follower with an obstacle brake](#3-own-example-line-follower-with-an-obstacle-brake)
 4. [v2a: a brake that really stops](#4-v2a-a-brake-that-really-stops)
 5. [v2b: the same network, trained instead of hand-weighted](#5-v2b-the-same-network-trained-instead-of-hand-weighted)
-6. [Programs](#programs)
+6. [v2c: trained, and it stops](#6-v2c-trained-and-it-stops)
+7. [Programs](#programs)
 
 ## 1. One weight, one output
 
@@ -77,6 +78,26 @@ Measured light values in the simulator:
 | Curve on blue | Full run |
 |---|---|
 | ![Robot turns on the blue area](images/06_curve_on_blue.png) | ![Curve with unequal weights](images/curve_unequal_weights.gif) |
+
+**Spiral background.** The same program (`in1` = light, one NN step, drive with speed `out1`, weight 1) runs on an own background image of the size of the default scene (730 × 460): an Archimedean spiral with a winding distance of 70 units. Inside each winding a grey gradient runs from white to black, followed by a hard edge back to white. The robot starts at x = 260, y = 230 facing left, so it crosses the windings outwards.
+
+![Spiral background with grey gradient](images/16_spiral_background.png)
+
+| Sample | Light | out1 | x |
+|---|---|---|---|
+| 1 | 28 % | 29.31 | 235.1 |
+| 2 | 5 % | 4.98 | 218.6 |
+| 3 | 36 % | 37.81 | 171.2 |
+| 4 | 6 % | 6.31 | 149.7 |
+| 5 | 51 % | 51.93 | 111.4 |
+| 6 | 10 % | 10.47 | 82.8 |
+| 7 | 90 % | 93.37 | 69.0 |
+
+In every winding the robot slows down as the gradient gets darker before the black edge (5 %, 6 %, 10 %). Behind the edge the sensor sees bright again and the robot speeds up. It never stops completely, because the sensor never measures 0 exactly on the edge, so it creeps over the edge at a few percent. This is the behaviour of the colour areas above, with a smooth instead of a stepped surface.
+
+| Start | Middle | End |
+|---|---|---|
+| ![Spiral start](images/17_spiral_start.png) | ![Spiral middle](images/18_spiral_middle.png) | ![Spiral end](images/19_spiral_end.png) |
 
 ## 3. Own example: line follower with an obstacle brake
 
@@ -178,6 +199,40 @@ What the network learned: h_dark drives almost only the right motor (0.06 to 0.5
 
 ![v2b follows the line and slows down](images/line_follower_v2b_trained.gif)
 
+## 6. v2c: trained, and it stops
+
+Goal: the trained network should stop completely at the block, like v2a. Program, shape 2,3,2, ReLU and start position are the same as in v2b.
+
+**New training data:** 117 examples ([`data/v2c_training_data_normalized.csv`](data/v2c_training_data_normalized.csv)). Light uses the same 9 steps, distance now uses 13 steps (8, 10, 12, 14, 16, 18, 20, 22, 25, 30, 45, 60 and 100 cm). 7 of the 13 distance steps are at 20 cm or below, in v2b it was 3 of 7. The targets again come from the v2a network function, all values divided by 100. Below 21 cm the target for both motors is 0.
+
+- **Try 1, continue training the v2b weights, learning rate 0.03:** loss 1.328 at epoch 1218, 1.322 at epoch 5000. No learning.
+- **Try 2, random start weights 0 to 0.5, learning rate 0.3:**
+
+| Epoch | 1813 | 3625 | 5000 | 6812 | 8623 | 10436 | 13933 | 15000 |
+|---|---|---|---|---|---|---|---|---|
+| Loss | 1.081 | 0.697 | 0.465 | 0.294 | 0.194 | 0.126 | 0.059 | 0.089 |
+
+The differences to v2b: more near examples and a 30 times higher learning rate (0.3 instead of 0.01).
+
+![Learned weights after 15000 epochs, loss 0.089](images/12_line_follower_v2c_loss_curve.png)
+
+**Driving behaviour** (sensor window, about every 3 s):
+
+| Time | distance | left | right |
+|---|---|---|---|
+| 6 s | 73.38 cm | 26.01 % | 26.19 % |
+| 15 s | 31.55 cm | 27.38 % | 25.38 % |
+| 18 s | 26.21 cm | 8.04 % | 11.64 % |
+| 24 s | 40.05 cm | 26.21 % | 26.47 % |
+| 27 s | 12.9 cm | 0 | 0 |
+| 30 s | 12.9 cm | 0 | 0 |
+
+In the curve the robot brakes briefly at 26 cm and drives on when the block leaves the ultrasonic cone again. At the block it measures 12.9 cm. All neurons are 0, out_l = out_r = 0, both motors stand. The encoders stay at 4328° and 3662° from 27 s to beyond 30 s, so the robot really stands. With more near examples and a higher learning rate the network learns the safe stop of v2a.
+
+| Neurons at the block | Stopped at the block |
+|---|---|
+| ![v2c at the block: all neurons 0](images/13_line_follower_v2c_at_obstacle.png) | ![v2c stands at the block](images/14_line_follower_v2c_stopped.png) |
+
 ## Programs
 
 | File | Content |
@@ -189,11 +244,13 @@ What the network learned: h_dark drives almost only the right motor (0.06 to 0.5
 | `light_3_drive_no_loop.xml`, `light_4_drive_loop.xml` | Speed from light, without and with loop |
 | `light_5_weight_0.5.xml` | Same with weight 0.5 |
 | `light_6_curve_weights_1_0.5.xml` | Two outputs, curve |
-| `line_follower_v1.xml`, `line_follower_v2a_braking.xml`, `line_follower_v2b_trained.xml` | Own example |
+| `light_7_spiral.xml` | Speed from light on the spiral background |
+| `line_follower_v1.xml`, `line_follower_v2a_braking.xml`, `line_follower_v2b_trained.xml`, `line_follower_v2c_trained_stop.xml` | Own example |
 | `data/v2b_training_data_raw.csv`, `data/v2b_training_data_normalized.csv` | 63 training rows `light;distance;out_l;out_r` |
+| `data/v2c_training_data_normalized.csv` | 117 training rows, all values divided by 100 |
 
 ## Limits
 
 - v1 and v2a are hand-weighted. The values fit this scene and this start direction.
 - With one light sensor the robot follows only one edge and only clockwise. It visibly oscillates in curves.
-- v2b learns line following and slowing down, but not the safe stop of v2a.
+- v2b learns line following and slowing down, but not the safe stop of v2a. v2c learns the stop with more near examples and a higher learning rate.

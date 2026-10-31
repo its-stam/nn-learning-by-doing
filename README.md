@@ -30,7 +30,7 @@ One input, one output, weight 2: `out1 = 2 · 1 = 2`. Add a second input with we
 |---|---|
 | ![One input with weight 2](open-roberta-xnn/images/01_net_one_input_weight_2.png) | ![Two inputs with weights 2 and -1](open-roberta-xnn/images/03_net_two_inputs.png) |
 
-With the light sensor as input and the motor as output, the robot drives slower on darker surfaces. A hidden ReLU layer then turns the network into a line follower with an obstacle brake. Two changed weights make the brake stop the robot completely: `out_r = relu(30 + 13.04 − 2 · 50.95) = 0`.
+With the light sensor as input and the motor as output, the robot drives slower on darker surfaces. A hidden ReLU layer then turns the network into a line follower with an obstacle brake. Two changed weights make the brake stop the robot completely: `out_r = relu(30 + 13.04 − 2 · 50.95) = 0`. A trained version of the same network now stops completely at the block too: with 117 training examples and learning rate 0.3 the loss falls from 1.081 to 0.089 after 15,000 epochs, and the robot stops at 12.9 cm.
 
 | Speed follows light | Hand-set 2-3-2 network |
 |---|---|
