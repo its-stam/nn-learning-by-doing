@@ -1,0 +1,181 @@
+phase,run,game,winner,moves,box2_red,box2_yellow,box2_grey,box3_red,box3_yellow,box3_grey,box4_red,box4_yellow,box4_grey
+1,random_vs_random,1,B,A1 B2 A3 B3 A3 B1 A1 B3 A3,,,,,,,,,
+1,random_vs_random,2,A,A3 B2 A3 B3 A3 B2 A3 B1,,,,,,,,,
+1,random_vs_random,3,A,A1 B1 A3 B1 A1 B2 A1 B2 A1 B3 A2 B2,,,,,,,,,
+1,random_vs_random,4,B,A1 B2 A2 B2 A2 B2 A3 B3 A3,,,,,,,,,
+1,random_vs_random,5,A,A1 B3 A2 B1 A3 B3 A2 B2 A2 B1,,,,,,,,,
+1,random_vs_random,6,A,A3 B3 A3 B3 A2 B1 A3 B2,,,,,,,,,
+1,random_vs_random,7,A,A2 B2 A2 B1 A2 B3 A3 B2 A1 B2,,,,,,,,,
+1,random_vs_random,8,A,A3 B3 A2 B2 A3 B2 A2 B3,,,,,,,,,
+1,random_vs_random,9,B,A2 B3 A3 B1 A3 B1 A1 B1 A3 B1 A1,,,,,,,,,
+1,random_vs_random,10,A,A2 B1 A2 B1 A1 B3 A3 B2 A3 B2,,,,,,,,,
+2,random_vs_strategy,1,strategy,R3 S1 R3 S1 R2 S1 R3 S1 R2 S2 R1,,,,,,,,,
+2,random_vs_strategy,2,strategy,R3 S1 R3 S1 R3 S1 R3 S1 R2 S1 R1,,,,,,,,,
+2,random_vs_strategy,3,strategy,R2 S1 R1 S3 R2 S2 R2 S2 R1 S3 R1,,,,,,,,,
+2,random_vs_strategy,4,strategy,R1 S2 R3 S1 R3 S1 R2 S2 R3 S1 R1,,,,,,,,,
+2,random_vs_strategy,5,strategy,R2 S1 R1 S3 R2 S2 R3 S1 R2 S2 R1,,,,,,,,,
+2,random_vs_strategy,6,strategy,R3 S1 R2 S1 R2 S2 R3 S1 R3 S1 R1,,,,,,,,,
+2,random_vs_strategy,7,strategy,R2 S1 R2 S2 R2 S2 R1 S3 R2 S2 R1,,,,,,,,,
+2,random_vs_strategy,8,strategy,R2 S1 R1 S3 R2 S2 R3 S1 R2 S2 R1,,,,,,,,,
+2,random_vs_strategy,9,strategy,R3 S1 R2 S1 R2 S2 R2 S2 R1 S3 R1,,,,,,,,,
+2,random_vs_strategy,10,strategy,R3 S1 R2 S1 R1 S3 R2 S2 R1 S3 R1,,,,,,,,,
+3,computer_vs_random_human,1,human,H1 C2 H1 C1,1,1,1,1,1,1,1,0,1
+3,computer_vs_random_human,2,computer,H3 C1 H1,2,1,1,1,1,1,1,0,1
+3,computer_vs_random_human,3,computer,H1 C1 H3,2,1,1,1,1,1,2,0,1
+3,computer_vs_random_human,4,human,H2 C3,2,1,1,1,1,0,2,0,1
+3,computer_vs_random_human,5,human,H3 C2,2,0,1,1,1,0,2,0,1
+3,computer_vs_random_human,6,human,H1 C1 H2 C1,2,0,1,1,1,0,1,0,1
+3,computer_vs_random_human,7,human,H3 C2,2,0,0,1,1,0,1,0,1
+3,computer_vs_random_human,8,computer,H3 C1 H1,3,0,0,1,1,0,1,0,1
+3,computer_vs_random_human,9,computer,H3 C1 H1,4,0,0,1,1,0,1,0,1
+3,computer_vs_random_human,10,computer,H3 C1 H1,5,0,0,1,1,0,1,0,1
+3,computer_vs_random_human,11,computer,H1 C3 H1,5,0,0,1,1,0,1,0,2
+3,computer_vs_random_human,12,computer,H1 C3 H1,5,0,0,1,1,0,1,0,3
+3,computer_vs_random_human,13,computer,H3 C1 H1,6,0,0,1,1,0,1,0,3
+3,computer_vs_random_human,14,computer,H1 C3 H1,6,0,0,1,1,0,1,0,4
+3,computer_vs_random_human,15,human,H1 C1 H2 C1,6,0,0,1,1,0,0,0,4
+3,computer_vs_random_human,16,computer,H1 C3 H1,6,0,0,1,1,0,0,0,5
+3,computer_vs_random_human,17,computer,H3 C1 H1,7,0,0,1,1,0,0,0,5
+3,computer_vs_random_human,18,computer,H1 C3 H1,7,0,0,1,1,0,0,0,6
+3,computer_vs_random_human,19,computer,H2 C2 H1,7,0,0,1,2,0,0,0,6
+3,computer_vs_random_human,20,computer,H2 C1 H2,7,0,0,2,2,0,0,0,6
+3,computer_vs_random_human,21,human,H2 C1 H1 C1,7,0,0,1,2,0,0,0,6
+3,computer_vs_random_human,22,computer,H3 C1 H1,8,0,0,1,2,0,0,0,6
+3,computer_vs_random_human,23,computer,H2 C2 H1,8,0,0,1,3,0,0,0,6
+3,computer_vs_random_human,24,computer,H2 C2 H1,8,0,0,1,4,0,0,0,6
+3,computer_vs_random_human,25,computer,H3 C1 H1,9,0,0,1,4,0,0,0,6
+3,computer_vs_random_human,26,computer,H1 C3 H1,9,0,0,1,4,0,0,0,7
+3,computer_vs_random_human,27,computer,H1 C3 H1,9,0,0,1,4,0,0,0,8
+3,computer_vs_random_human,28,computer,H2 C2 H1,9,0,0,1,5,0,0,0,8
+3,computer_vs_random_human,29,computer,H3 C1 H1,9,0,0,1,5,0,0,0,8
+3,computer_vs_random_human,30,computer,H3 C1 H1,9,0,0,1,5,0,0,0,8
+3,computer_vs_random_human,31,computer,H3 C1 H1,9,0,0,1,5,0,0,0,8
+3,computer_vs_random_human,32,computer,H3 C1 H1,9,0,0,1,5,0,0,0,8
+3,computer_vs_random_human,33,computer,H2 C2 H1,9,0,0,1,6,0,0,0,8
+3,computer_vs_random_human,34,computer,H1 C3 H1,9,0,0,1,6,0,0,0,9
+3,computer_vs_random_human,35,computer,H1 C3 H1,9,0,0,1,6,0,0,0,10
+3,computer_vs_random_human,36,computer,H2 C2 H1,9,0,0,1,7,0,0,0,10
+3,computer_vs_random_human,37,computer,H2 C2 H1,9,0,0,1,8,0,0,0,10
+3,computer_vs_random_human,38,computer,H1 C3 H1,9,0,0,1,8,0,0,0,10
+3,computer_vs_random_human,39,computer,H2 C2 H1,9,0,0,1,9,0,0,0,10
+3,computer_vs_random_human,40,computer,H1 C3 H1,9,0,0,1,9,0,0,0,10
+3,computer_vs_random_human,41,computer,H1 C3 H1,9,0,0,1,9,0,0,0,10
+3,computer_vs_random_human,42,computer,H3 C1 H1,9,0,0,1,9,0,0,0,10
+3,computer_vs_random_human,43,computer,H3 C1 H1,9,0,0,1,9,0,0,0,10
+3,computer_vs_random_human,44,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,45,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,46,computer,H1 C3 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,47,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,48,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,49,computer,H1 C3 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,50,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,51,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,52,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,53,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,54,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,55,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,56,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,57,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,58,computer,H1 C3 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,59,computer,H1 C3 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,60,computer,H1 C3 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,61,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,62,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,63,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,64,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,65,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,66,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,67,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,68,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,69,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,70,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,71,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,72,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,73,computer,H1 C3 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,74,computer,H1 C3 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,75,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,76,computer,H1 C3 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,77,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,78,computer,H2 C2 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,79,computer,H3 C1 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_random_human,80,computer,H1 C3 H1,9,0,0,1,10,0,0,0,10
+3,computer_vs_optimal_human,1,human,H3 C2,1,1,0,1,1,1,1,1,1
+3,computer_vs_optimal_human,2,human,H3 C2,1,0,0,1,1,1,1,1,1
+3,computer_vs_optimal_human,3,human,H2 C1 H1 C1,1,0,0,0,1,1,1,1,1
+3,computer_vs_optimal_human,4,human,H1 C1 H2 C1,1,0,0,0,1,1,0,1,1
+3,computer_vs_optimal_human,5,computer,H1 C3 H1,1,0,0,0,1,1,0,1,2
+3,computer_vs_optimal_human,6,human,H2 C3,1,0,0,0,1,0,0,1,2
+3,computer_vs_optimal_human,7,computer,H2 C2 H1,1,0,0,0,2,0,0,1,2
+3,computer_vs_optimal_human,8,computer,H1 C3 H1,1,0,0,0,2,0,0,1,3
+3,computer_vs_optimal_human,9,computer,H3 C1 H1,2,0,0,0,2,0,0,1,3
+3,computer_vs_optimal_human,10,computer,H3 C1 H1,3,0,0,0,2,0,0,1,3
+3,computer_vs_optimal_human,11,computer,H3 C1 H1,4,0,0,0,2,0,0,1,3
+3,computer_vs_optimal_human,12,computer,H2 C2 H1,4,0,0,0,3,0,0,1,3
+3,computer_vs_optimal_human,13,computer,H3 C1 H1,5,0,0,0,3,0,0,1,3
+3,computer_vs_optimal_human,14,computer,H3 C1 H1,6,0,0,0,3,0,0,1,3
+3,computer_vs_optimal_human,15,computer,H3 C1 H1,7,0,0,0,3,0,0,1,3
+3,computer_vs_optimal_human,16,computer,H1 C3 H1,7,0,0,0,3,0,0,1,4
+3,computer_vs_optimal_human,17,computer,H2 C2 H1,7,0,0,0,4,0,0,1,4
+3,computer_vs_optimal_human,18,computer,H3 C1 H1,8,0,0,0,4,0,0,1,4
+3,computer_vs_optimal_human,19,computer,H3 C1 H1,9,0,0,0,4,0,0,1,4
+3,computer_vs_optimal_human,20,computer,H1 C3 H1,9,0,0,0,4,0,0,1,5
+3,computer_vs_optimal_human,21,computer,H2 C2 H1,9,0,0,0,5,0,0,1,5
+3,computer_vs_optimal_human,22,computer,H3 C1 H1,10,0,0,0,5,0,0,1,5
+3,computer_vs_optimal_human,23,computer,H3 C1 H1,10,0,0,0,5,0,0,1,5
+3,computer_vs_optimal_human,24,computer,H2 C2 H1,10,0,0,0,6,0,0,1,5
+3,computer_vs_optimal_human,25,computer,H1 C3 H1,10,0,0,0,6,0,0,1,6
+3,computer_vs_optimal_human,26,computer,H1 C3 H1,10,0,0,0,6,0,0,1,7
+3,computer_vs_optimal_human,27,computer,H3 C1 H1,10,0,0,0,6,0,0,1,7
+3,computer_vs_optimal_human,28,computer,H3 C1 H1,10,0,0,0,6,0,0,1,7
+3,computer_vs_optimal_human,29,computer,H2 C2 H1,10,0,0,0,7,0,0,1,7
+3,computer_vs_optimal_human,30,computer,H3 C1 H1,10,0,0,0,7,0,0,1,7
+3,computer_vs_optimal_human,31,computer,H1 C3 H1,10,0,0,0,7,0,0,1,8
+3,computer_vs_optimal_human,32,computer,H3 C1 H1,10,0,0,0,7,0,0,1,8
+3,computer_vs_optimal_human,33,computer,H1 C3 H1,10,0,0,0,7,0,0,1,9
+3,computer_vs_optimal_human,34,computer,H2 C2 H1,10,0,0,0,8,0,0,1,9
+3,computer_vs_optimal_human,35,computer,H2 C2 H1,10,0,0,0,9,0,0,1,9
+3,computer_vs_optimal_human,36,human,H1 C2 H1 C1,10,0,0,0,9,0,0,0,9
+3,computer_vs_optimal_human,37,computer,H3 C1 H1,10,0,0,0,9,0,0,0,9
+3,computer_vs_optimal_human,38,computer,H2 C2 H1,10,0,0,0,10,0,0,0,9
+3,computer_vs_optimal_human,39,computer,H3 C1 H1,10,0,0,0,10,0,0,0,9
+3,computer_vs_optimal_human,40,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,41,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,42,computer,H3 C1 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,43,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,44,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,45,computer,H3 C1 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,46,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,47,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,48,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,49,computer,H3 C1 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,50,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,51,computer,H3 C1 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,52,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,53,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,54,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,55,computer,H3 C1 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,56,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,57,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,58,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,59,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,60,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,61,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,62,computer,H3 C1 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,63,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,64,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,65,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,66,computer,H3 C1 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,67,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,68,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,69,computer,H3 C1 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,70,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,71,computer,H3 C1 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,72,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,73,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,74,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,75,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,76,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,77,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,78,computer,H1 C3 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,79,computer,H3 C1 H1,10,0,0,0,10,0,0,0,10
+3,computer_vs_optimal_human,80,computer,H2 C2 H1,10,0,0,0,10,0,0,0,10
